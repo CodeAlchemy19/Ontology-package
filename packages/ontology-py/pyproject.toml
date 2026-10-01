@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tudalia-ontology"
+version = "0.2.0"
+description = "Tudalia Care Ontology — vocabulary + Pydantic extraction contract for the AI engine"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [{ name = "Tudalia" }]
+dependencies = [
+  "pydantic>=2.6,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+tudalia-ontology-demo = "tudalia_ontology.demo:main"
+tudalia-ontology-list = "tudalia_ontology.list_vocab:main"
+tudalia-ontology-html = "tudalia_ontology.export_html:main"
+tudalia-ontology-flow = "tudalia_ontology.export_flow_demo:main"
+tudalia-ontology-validate = "tudalia_ontology.validate_playground:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+tudalia_ontology = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

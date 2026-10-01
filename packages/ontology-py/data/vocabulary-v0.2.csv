@@ -1,0 +1,68 @@
+﻿code,domain,subdomain,label_pl,definition,kind,value_type,options_or_unit,omaha_problem,icf_ref,katz_lawton,trendable,clinician_review
+condition.pain,condition,pain,Ból,Pain the senior reports or shows. Body site kept as said. No intensity scale.,observation,presence,,Pain,b280,,no,no
+condition.sleep,condition,sleep,Sen,"How the senior slept, as described by her or observed.",observation,option,slept_well;slept_poorly;woke_often,Sleep and rest patterns,b134,,yes,no
+condition.skin_change,condition,skin,Zmiany na skórze,"A visible change on the skin (redness, bruise, wound, rash) as described, with site. No staging or grading.",observation,presence,,Skin,b810,,no,yes
+condition.breathlessness,condition,breathing,Duszność,Shortness of breath observed or reported.,observation,presence,,Respiration,b440,,no,yes
+condition.dizziness,condition,other_symptoms,Zawroty głowy,Dizziness the senior reports.,observation,presence,,Neuro-musculo-skeletal function,b2401,,no,no
+condition.continence_episode,condition,elimination,Nietrzymanie moczu/stolca,An episode of urine or stool leakage.,observation,presence,,Urinary function; Bowel function,b620; b525,Katz: continence,no,no
+condition.bowel,condition,elimination,Wypróżnienia,Bowel movements as described (e.g. constipation reported).,observation,text,,Bowel function,b525,,no,no
+condition.hearing_difficulty,condition,senses,Trudność ze słyszeniem,"Difficulty hearing, observed or reported.",observation,presence,,Hearing,b230,,no,no
+condition.vision_difficulty,condition,senses,Trudność z widzeniem,"Difficulty seeing, observed or reported.",observation,presence,,Vision,b210,,no,no
+condition.oral_problem,condition,senses,Problem z jamą ustną/protezą,"A problem with teeth, gums or dentures, as described.",observation,presence,,Oral health,b510,,no,no
+condition.blood_pressure,condition,measurements,Ciśnienie,Blood pressure measured during the visit (or on the senior's own device). Numbers only; no reference range.,observation,quantity,mm[Hg] (systolic/diastolic),Circulation,b420,,yes,yes
+condition.heart_rate,condition,measurements,Tętno,Heart rate measured during the visit. Number only.,observation,quantity,/min,Circulation,b410,,yes,yes
+condition.blood_glucose,condition,measurements,Cukier,"Blood glucose from the senior's meter, as read. Number only.",observation,quantity,mg/dL,,b540,,yes,yes
+condition.body_temperature,condition,measurements,Temperatura,Body temperature measured during the visit. Number only.,observation,quantity,Cel,,b550,,yes,yes
+condition.other,condition,other_symptoms,Inne (stan),Anything about physical state that no other concept fits. Reviewed monthly.,observation,text,,,,,no,no
+mood.mood,mood,mood,Nastrój,The senior's mood in everyday words.,observation,option,good_spirits;calm;low;anxious;irritable;tearful,Mental health,b152,,yes,no
+mood.conversation,mood,social_life,Rozmowa,What the senior talked about.,observation,text,,Social contact,d350,,no,no
+mood.social_contact,mood,social_life,Kontakt z bliskimi,Who called or visited.,observation,text,,Social contact; Interpersonal relationship,d750; d760,,no,no
+mood.confusion_observed,mood,memory_orientation,"Zagubienie, luki w pamięci","Confusion or a memory lapse, described in words. Never labelled as dementia or any condition.",observation,presence,,Cognition,b114; b144,,no,yes
+mood.loneliness_expressed,mood,social_life,Poczucie samotności,The senior said she feels lonely.,observation,presence,,Social contact,,,no,no
+mood.engagement,mood,wishes_meaning,"Zajęcia, które cieszą",An activity the senior enjoyed or took part in.,observation,text,,Social contact,d920,,no,no
+mood.wish_expressed,mood,wishes_meaning,Życzenie seniorki,Something the senior said she would like.,observation,text,,Spirituality,,,no,no
+mood.other,mood,mood,Inne (nastrój),"Anything about mood, memory or social life that no other concept fits.",observation,text,,,,,no,no
+medication.given,medication,administration,Podanie leków,The caregiver gave medication. Time and name as said; no dose checking.,care_activity,time,,Medication regimen,d570,,no,yes
+medication.taken_independently,medication,adherence,Samodzielne przyjęcie leków,The senior took her medication by herself.,observation,presence,,Medication regimen,d570,Lawton: medications,no,no
+medication.refused,medication,adherence,Odmowa przyjęcia leku,The senior declined a medication. Recorded neutrally.,observation,presence,,Medication regimen,d570,,no,no
+medication.missed,medication,adherence,Pominięta dawka,A dose was missed (e.g. found untaken in the organiser).,observation,presence,,Medication regimen,d570,,no,no
+medication.pill_organiser_prepared,medication,administration,Przygotowanie kasetki,The caregiver filled or prepared the pill organiser.,care_activity,presence,,Medication regimen,,,no,no
+medication.other,medication,administration,Inne (leki),Anything about medication that no other concept fits.,observation,text,,,,,no,no
+diet.meal_eaten,diet,meals,Posiłek,A meal and how much of it was eaten. Portion only if said.,observation,option,none;little;half;most;all,Nutrition,d550,Katz: feeding,yes,no
+diet.fluids,diet,fluids,Picie,"How much the senior drank: a number if said, otherwise a word.",observation,quantity|option,mL | little;as_usual;plenty,Digestion-hydration,d560,,yes,no
+diet.appetite,diet,meals,Apetyt,"Appetite, only as compared by the caregiver or senior.",observation,option,less_than_usual;as_usual;more_than_usual,Nutrition,b1302,,yes,no
+diet.body_weight,diet,weight,Waga,Body weight if weighed. Number only.,observation,quantity,kg,Nutrition,b530,,yes,no
+diet.swallowing_difficulty,diet,swallowing,Trudność z połykaniem,"Difficulty swallowing, observed or reported.",observation,presence,,Digestion-hydration,b5105,,no,yes
+diet.meal_prepared,diet,meals,Przygotowanie posiłku,The caregiver prepared a meal.,care_activity,presence,,Nutrition,d630,Lawton: food preparation,no,no
+diet.other,diet,meals,Inne (dieta),Anything about eating or drinking that no other concept fits.,observation,text,,,,,no,no
+mobility.walking,mobility,walking,Chodzenie,How the senior walked.,observation,option,without_difficulty;with_difficulty;with_help;did_not_walk,Neuro-musculo-skeletal function,d450,,yes,no
+mobility.transfer,mobility,transfers,Wstawanie i przesiadanie się,Getting in and out of bed or a chair.,observation,option,without_difficulty;with_difficulty;with_help;did_not_walk,Neuro-musculo-skeletal function,d420,Katz: transferring,yes,no
+mobility.walk_accompanied,mobility,outdoors,Spacer z opiekunem,The caregiver went for a walk with the senior. Destination as said.,care_activity,text,,Physical activity,d460,,no,no
+mobility.unsteadiness,mobility,balance,"Chwiejność, prawie upadek","Unsteadiness or a near-fall. An actual fall is an outcome event, not this.",observation,presence,,Neuro-musculo-skeletal function,b235,,no,yes
+mobility.time_outdoors,mobility,outdoors,Wyjście z domu,The senior went outside.,observation,presence,,Physical activity,d460,,no,no
+mobility.exercise,mobility,walking,Ćwiczenia,Exercises done with the caregiver.,care_activity,text,,Physical activity,,,no,no
+mobility.other,mobility,walking,Inne (mobilność),Anything about moving around that no other concept fits.,observation,text,,,,,no,no
+hygiene.bathing,hygiene,bathing,"Kąpiel, mycie",Washing or bathing. As an observation: how much help was needed. As a care activity: its outcome (done / declined…).,observation|care_activity,option,independent;with_help;done_by_caregiver,Personal care,d510,Katz: bathing,no,no
+hygiene.dressing,hygiene,dressing,Ubieranie,Dressing; same two uses as bathing.,observation|care_activity,option,independent;with_help;done_by_caregiver,Personal care,d540,Katz: dressing,no,no
+hygiene.toileting,hygiene,toileting,Toaleta,Using the toilet; same two uses as bathing.,observation|care_activity,option,independent;with_help;done_by_caregiver,Personal care,d530,Katz: toileting,no,no
+hygiene.oral_care,hygiene,oral_grooming,"Mycie zębów, proteza",Oral care or denture care.,observation|care_activity,option,independent;with_help;done_by_caregiver,Personal care,d5201,,no,no
+hygiene.grooming,hygiene,oral_grooming,Pielęgnacja,"Hair, nails, shaving.",observation|care_activity,option,independent;with_help;done_by_caregiver,Personal care,d520,,no,no
+hygiene.continence_products_changed,hygiene,toileting,Zmiana środków chłonnych,The caregiver changed incontinence products.,care_activity,presence,,Personal care,,,no,no
+hygiene.other,hygiene,bathing,Inne (higiena),Anything about personal care that no other concept fits.,observation,text,,,,,no,no
+home.cleaning,home,housekeeping,Sprzątanie,The caregiver cleaned.,care_activity,presence,,Sanitation,d640,Lawton: housekeeping,no,no
+home.laundry,home,housekeeping,Pranie,The caregiver did laundry.,care_activity,presence,,Sanitation,d6400,Lawton: laundry,no,no
+home.ventilation,home,environment,Wietrzenie,The caregiver aired the rooms.,care_activity,presence,,Residence,,,no,no
+home.heating_issue,home,environment,Ogrzewanie,A problem with heating or temperature at home.,observation,text,,Residence,,,no,no
+home.hazard_noticed,home,environment,Zagrożenie w domu,"Something at home that could cause harm (loose rug, gas smell…), as described.",observation,text,,Residence; Neighborhood/workplace safety,,,no,no
+home.appliance_issue,home,environment,Usterka,A broken appliance or fitting.,observation,text,,Residence,,,no,no
+home.other,home,housekeeping,Inne (dom),Anything about the home that no other concept fits.,observation,text,,,,,no,no
+affairs.shopping_done,affairs,shopping_errands,Zakupy,The caregiver did the shopping.,care_activity,presence,,,d6200,Lawton: shopping,no,no
+affairs.errand,affairs,shopping_errands,Sprawa do załatwienia,"An errand run (post office, pharmacy…), as said.",care_activity,text,,Communication with community resources,d620,,no,no
+affairs.prescription_collected,affairs,shopping_errands,Odbiór recepty/leków,A prescription or medication was collected.,care_activity,presence,,Health care supervision,d6200,,no,no
+affairs.appointment_planned,affairs,appointments,Zaplanowana wizyta,"A planned appointment (doctor, office…). An urgent one is an outcome event.",observation,date,,Health care supervision,,,no,no
+affairs.appointment_attended,affairs,appointments,Wizyta odbyta,A planned appointment took place.,care_activity,text,,Health care supervision,,,no,no
+affairs.paperwork,affairs,paperwork_money,"Dokumenty, formalności",Help with documents or forms.,care_activity,text,,Communication with community resources,,,no,no
+affairs.money_help,affairs,paperwork_money,Pomoc z płatnościami,Help with bills or payments.,care_activity,text,,Income,d860,Lawton: finances,no,no
+affairs.transport_provided,affairs,transport,Transport,The caregiver drove or accompanied the senior somewhere.,care_activity,text,,Communication with community resources,d470,Lawton: transportation,no,no
+affairs.phone_call_help,affairs,communication,Pomoc w kontakcie,Help with a phone call or other contact.,care_activity,presence,,Communication with community resources,d360,Lawton: telephone,no,no
+affairs.other,affairs,shopping_errands,Inne (sprawy),Any errand or matter that no other concept fits.,observation,text,,,,,no,no

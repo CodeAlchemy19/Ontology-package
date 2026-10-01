@@ -1,0 +1,56 @@
+# Local reference docs (not part of the package)
+/reference/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env/
+.ENV/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+id_ed25519*
+id_rsa*
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
